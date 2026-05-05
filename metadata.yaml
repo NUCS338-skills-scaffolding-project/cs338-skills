@@ -1,0 +1,7 @@
+```yaml
+course_id: "cs338-skills"
+course_name: "CS338 skills"
+course_type: "cs"           # "humanities" or "cs"
+spoc_contact: "shubham.shahi@northwestern.edu"
+skills_used: []
+```
