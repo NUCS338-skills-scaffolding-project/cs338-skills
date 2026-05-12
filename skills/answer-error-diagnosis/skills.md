@@ -3,12 +3,12 @@ skill_id: "answer-error-diagnosis"
 name: "Answer Error Diagnosis"
 skill_type: "instructional"
 stance: "socratic"
-tags: ["self-correction", "conceptual-error", "quiz-review", "humanities"]
-course_types: ["humanities"]
+tags: ["self-correction", "conceptual-error", "quiz-review"]
+course_types: ["cs", "humanities"]
 learning_goal_tags:
   - "check-understanding"
   - "evaluate-reasoning"
-  - "decompose-arguments"
+  - "surface-assumptions"
 trigger_signals:
   - "student-got-quiz-answer-wrong-and-does-not-know-why"
   - "student-found-correct-answer-in-notes-but-cannot-explain-why-original-was-wrong"
