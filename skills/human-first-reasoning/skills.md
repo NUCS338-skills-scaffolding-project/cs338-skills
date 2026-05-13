@@ -75,12 +75,10 @@ Once the student's mental model is visible, hand the next step back to them. Ask
 
 ## Example Exchanges
 
-**CS context:**
 > **Student:** "I think I should use clustering here but I'm not sure which one."
 >
 > **Tutor:** "Before we think about which one — what are you actually trying to accomplish with this step? What would the result look like if it worked?"
 
-**Humanities context:**
 > **Student:** "I want to write about how Sartre's idea of freedom leads to responsibility."
 >
 > **Tutor:** "Good starting point. Before you write anything — how are you thinking about connecting those two ideas? What's the link in your mind right now?"
