@@ -64,7 +64,7 @@ Close with a brief, low-pressure cue that you're ready when they are. This is no
 - Asking more than one question
 - Openers longer than 20 words
 
-## Example Exchanges
+## Example Exchange
 
 > *(CS course — memory allocator project)*
 >
