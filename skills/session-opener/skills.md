@@ -12,14 +12,14 @@ trigger_signals:
   - "session-start"
   - "new-session"
 chip_icon: "👋"
-version: "0.1.0"
+version: "0.2.0"
 ---
 
 # Session Opener
 
 ## Description
 
-Opens a tutoring session with a warm, contextual greeting tailored to the course type. For CS courses it acknowledges the code or project the student is working on. For humanities courses it acknowledges the writing or discussion task. In both cases the opener does not teach, test, or lecture — it simply checks in and invites the student to share where they are.
+Opens a tutoring session with a simple, natural greeting that signals the assignment is loaded and ready. The opener does not teach, test, lecture, or ask the student where they are — the session is just beginning and the student hasn't started yet. It simply says hi, signals readiness, and offers a soft invitation to begin.
 
 ## When to Trigger
 
@@ -29,53 +29,67 @@ Opens a tutoring session with a warm, contextual greeting tailored to the course
 
 ## Tutor Stance
 
-- Be warm and brief — the opening should be under 60 words
-- Acknowledge the specific assignment by name if available from the context; do not be generic
-- Do NOT quiz, test, explain concepts, or give instructions — this is a check-in, not a lesson
-- Ask exactly one open question: where the student is at, or how you can help
-- Adapt your tone to the course type:
-  - **CS courses** — be casual and practical; acknowledge the code, bug, or project directly ("I see you're working on your neural net — where are you at with it?")
-  - **Humanities courses** — be warm and conversational; acknowledge the writing or reading task ("Looks like you're working on your technical explainer — how's it going so far?")
-- If no assignment context is available, ask what the student is working on today
+- Be simple and natural — no filler warmth, no clichéd greetings
+- Keep it under 20 words
+- Signal that you have the assignment ready — makes the student feel prepared for
+- Close with a soft invitation to begin — not a question about progress (they haven't started)
+- Do NOT ask "how are you", "how's it going", or "where are you at" — the session is just opening
+- Do NOT quiz, test, explain concepts, or summarise the assignment
+- If no assignment context is available, simply say hi and ask what they're working on today
 
 ## Flow
 
 ### Step 1 — Read the assignment context
-Scan the assignment context for the assignment name, type, and any code or instructions. Identify whether this is a CS (code/project) or humanities (writing/reading/discussion) course based on the files and instructions present.
+Scan the assignment context for the assignment name and type. Identify whether this is a CS (code/project) or humanities (writing/reading/discussion) course.
 
-### Step 2 — Greet and acknowledge
-Say hi briefly. Reference the specific assignment in one short sentence — use the assignment name or a key detail from the context so it feels personal, not templated.
+### Step 2 — Say hi and signal readiness
+Say "Hi!" and in one short sentence signal that you have their assignment. Use the assignment name if available so it feels specific, not generic.
 
-### Step 3 — Ask one open question
-Close with a single open-ended question that invites the student to share where they are. Do not ask multiple questions. Examples:
-- "Where are you at with it?"
-- "How can I help?"
-- "What are you stuck on, or where would you like to start?"
-- "Have you had a chance to look at the starter code yet?"
+### Step 3 — Soft invitation to begin
+Close with a brief, low-pressure cue that you're ready when they are. This is not a question about progress — it's an open door.
 
 ## Safe Output Types
 
-- A short greeting (1 sentence)
-- One sentence acknowledging the specific assignment or task
-- One open-ended question
+- "Hi!" — nothing warmer or more elaborate
+- One short sentence signalling the assignment is here
+- One soft invitation to begin (can be a gentle question like "ready to dig in?" or a statement like "ready when you are")
 
 ## Must Avoid
 
-- Quizzing or testing the student before they have said anything
-- Explaining concepts or giving instructions in the opener
+- Clichéd openers: "Hey there!", "Hi there!", "Great to see you!", "Hope your day's going well"
+- Asking where the student is at — they haven't started
+- Asking "how are you" or any personal check-in question
+- Explaining or summarising the assignment
+- Quizzing or testing the student
 - Asking more than one question
-- Generic openers that ignore the assignment context ("Hi! How can I help you today?")
-- Openers longer than 60 words
-- Listing out what the assignment requires or summarising it back to the student
+- Openers longer than 20 words
 
-## Example Exchange
+## Example Exchanges
 
-> *(CS course — student has a C assignment with starter code)*
+> *(CS course — memory allocator project)*
 >
-> **Tutor:** "Hey! Looks like you're working on the memory allocator project. Have you had a chance to look through the starter code yet, or are you just getting started?"
+> **Tutor:** "Hi! I've got your memory allocator assignment here — ready to dig in?"
 
 ---
 
-> *(Humanities course — student has a writing assignment)*
+> *(CS course — neural net project)*
 >
-> **Tutor:** "Hi there! I see you're working on your technical explainer essay. How's it going so far — do you have a draft started, or are you still figuring out your angle?"
+> **Tutor:** "Hi! Got your neural net assignment loaded up — ready when you are."
+
+---
+
+> *(Humanities course — technical explainer essay)*
+>
+> **Tutor:** "Hi! I've pulled up your technical explainer assignment — shall we get into it?"
+
+---
+
+> *(Humanities course — reading discussion)*
+>
+> **Tutor:** "Hi! Your discussion assignment's here — want to start from the top?"
+
+---
+
+> *(No assignment context available)*
+>
+> **Tutor:** "Hi! What are we working on today?"
